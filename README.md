@@ -67,10 +67,6 @@ python3 build.py
 - `index.html`: a single-file preview with all CSS and JS inlined (service worker registration is skipped)
 - `artifact.html`: the same preview without the document skeleton, for hosts that wrap pages
 
-## Deploy (GitHub Pages)
-
-Push to `main`. `.github/workflows/pages.yml` builds and publishes the site. In the repository settings, set **Pages → Source** to **GitHub Actions**. All paths are relative, so it works from a sub-path such as `/linuxverse/`.
-
 ## Project structure
 
 ```

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Linuxverse</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Everything about Linux: animated explanations, live labs and a safe simulated terminal. Works offline.">
+<meta name="theme-color" content="#0c1018">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<!--BODY-->
+<header id="hdr">
+  <div class="hdr-row">
+    <button id="logo" data-go="home" aria-label="Linuxverse home">
+      <b>Linux<span>verse</span></b>
+    </button>
+    <div class="hdr-acts">
+      <button class="ibtn mode-btn" id="btn-mode" aria-label="Display mode"></button>
+      <button class="ibtn" id="btn-help" aria-label="How to use" aria-expanded="false">?</button>
+      <button class="ibtn" id="btn-music" aria-label="Ambience music" aria-pressed="false"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></svg></button>
+      <button class="ibtn" id="btn-theme" aria-label="Switch theme"></button>
+      <button class="ibtn" id="btn-palette" aria-label="Colour palette" aria-haspopup="true" aria-expanded="false"></button>
+    </div>
+  </div>
+  <div id="q-wrap">
+    <label class="search"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search topics, commands, labs" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="results" aria-expanded="false"><span class="kbd" aria-hidden="true">/</span></label>
+    <div id="results" hidden></div>
+  </div>
+  <nav id="qj" aria-label="Jump to a section" hidden></nav>
+  <div id="qj-prog" aria-hidden="true"></div>
+</header>
+
+<main id="view" tabindex="-1"></main>
+
+<nav id="bnav" aria-label="Main">
+  <button data-go="home"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>Home</button>
+  <button data-go="learn"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></svg>Learn</button>
+  <button data-go="term"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="16" rx="2"/><path d="M6.5 9l3 3-3 3M12 15h5"/></svg>Terminal</button>
+  <button data-go="labs"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6L4.5 19a1.5 1.5 0 0 0 1.3 2h12.4a1.5 1.5 0 0 0 1.3-2L14 9V3"/><path d="M7 15h10"/></svg>Labs</button>
+</nav>
+
+<div id="player" hidden aria-label="Ambience music player"></div>
+<div id="help" class="sheet" hidden></div>
+<div id="spot" hidden><div id="spot-ring"></div><div id="spot-tip" role="dialog" aria-live="polite"></div></div>
+<div id="toast" role="status" hidden></div>
+
+<script src="js/core.js"></script>
+<script src="js/data/01-foundations.js"></script>
+<script src="js/data/02-text-proc-pkg.js"></script>
+<script src="js/data/03-system-net.js"></script>
+<script src="js/data/04-more.js"></script>
+<script src="js/data/05-az.js"></script>
+<script src="js/data/06-az-more.js"></script>
+<script src="js/data/07-az-more.js"></script>
+<script src="js/data/08-extra.js"></script>
+<script src="js/data/09-extra2.js"></script>
+<script src="js/data/10-extra3.js"></script>
+<script src="js/data/11-extra4.js"></script>
+<script src="js/anim.js"></script>
+<script src="js/labs.js"></script>
+<script src="js/labs2.js"></script>
+<script src="js/games.js"></script>
+<script src="js/term.js"></script>
+<script src="js/learn.js"></script>
+<script src="js/explore.js"></script>
+<script src="js/ideas2.js"></script>
+<script src="js/challenges2.js"></script>
+<script src="js/az.js"></script>
+<script src="js/ambience.js"></script>
+<script src="js/help.js"></script>
+<script src="js/app.js"></script>
+<!--/BODY-->
+</body>
+</html>

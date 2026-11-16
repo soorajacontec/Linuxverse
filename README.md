@@ -8,8 +8,6 @@
 
 ![Linuxverse home](docs/screenshots/home-dark.png)
 
-> Live site (after you enable Pages): `https://soorajacontec.github.io/linuxverse/`
-
 
 Plain HTML, CSS and JavaScript. There is no build step needed to run it and nothing to install.
 

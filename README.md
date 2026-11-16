@@ -8,16 +8,8 @@
 
 ![Linuxverse home](docs/screenshots/home-dark.png)
 
-> Live site (after you enable Pages): `https://<your-username>.github.io/linuxverse/`
+> Live site (after you enable Pages): `https://soorajacontec.github.io/linuxverse/`
 
-## Quick start
-
-```bash
-git clone https://github.com/<your-username>/linuxverse.git
-cd linuxverse
-python3 -m http.server 8000
-# open http://localhost:8000
-```
 
 Plain HTML, CSS and JavaScript. There is no build step needed to run it and nothing to install.
 

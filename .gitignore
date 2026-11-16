@@ -1,0 +1,12 @@
+dist/
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+*.log
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.claude/
+_site/
